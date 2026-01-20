@@ -96,17 +96,17 @@ const router = createBrowserRouter(
         <Route
           path="/payment-success"
           element={
-            <ProtectedRoute>
+           // <ProtectedRoute>
               <PaymentSuccessPage />
-            </ProtectedRoute>
+           // </ProtectedRoute>
           }
         />
         <Route
           path="/payment-cancel"
           element={
-            <ProtectedRoute>
+         //   <ProtectedRoute>
               <PaymentCancelPage />
-            </ProtectedRoute>
+          //  </ProtectedRoute>
           }
         />
         <Route
