@@ -24,7 +24,7 @@ app.use(
     origin: "https://book-store-frontend-navy.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
-  })
+  }),
 );
 
 app.use("uploads", express.static(path.join(__dirname, "uploads")));
@@ -46,6 +46,7 @@ app.get("/", async (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, async () => {
+  // await connectDB();
   console.log("Server is running on port: ", PORT);
 });
